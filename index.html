@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATTION FORM</title>
+</head>
+    <body>
+        <h1>REGISTRATION FORM</h1>
+            <form method="post">  <!--inica un formulario -->
+                <div>   <!--ingresar texto-->
+                    <label for="Firstname">First Name:* </label>
+                    <input id="Firstname" type="text" name="Firstname" placeholder="First Name">   <!--place holder indica que texto va en la casilla-->
+                </div>
+                <div>   <!--ingresar texto-->
+                    <label for="LastName">Last Name:* </label>
+                    <input id="LastName "type="text" name="LastName" placeholder="Last Name">
+                </div>
+                <div>   <!--ingresar emails-->
+                    <label for="EmailAdress">Email Adress:* </label>
+                    <input id="EmailAdress "type="text" name="EmailAdress" placeholder="Email Adress">
+                </div>
+                <div>   <!--ingresar passwords-->
+                    <label for="Password">Password:* </label>
+                    <input id="Password " type="password" name="Password" placeholder="Password">
+                </div>
+                <div>   <!--ingresar passwords-->
+                    <label for="ConfirmPassword">Confirm Password:* </label>
+                    <input id="ConfirmPassword" type="password" name="ConfirmPassword" placeholder="Confirm Password">
+                </div>
+                <!-- birthday type date ingresa fechas  -->
+                <div>
+                    <label for="Birthday">Birthday:* </label>
+                    <input id="Birthday "type="date" name="Birthday" placeholder="mm/dd/yyy">
+                </div>
+                <!-- seleccion de formato tipo radio input go first then label  -->
+                <div>
+                    <label for="GenderIdentity">Gender Identity:</label>
+                        <div>
+                            <label for="GenderIdentity">Male </label>
+                            <input id="GenderIdentity" type="radio" name="GenderIdentity">
+                            <label for="GenderIdentity">Female </label>
+                            <input id="GenderIdentity" type="radio" name="GenderIdentity">
+                            <label for="GenderIdentity">Non-binary </label>
+                            <input id="GenderIdentity" type="radio" name="GenderIdentity">
+                            <label for="GenderIdentity">I prefer not to answer </label>
+                            <input id="GenderIdentity" type="radio" name="GenderIdentity">
+                        </div>
+                </div>  
+                <div>
+                    <label>A short description about myself:</label>
+                </div>
+                <div>    <!--ingresa un cuadro de texto-->
+                    <textarea name="descripcion" cols="50" rows="3"></textarea>
+                </div>  <!--ingresa un cuadro de seleccion-->
+                <div>
+                    <label>Favorite Language: </label>
+                        <select name="Favoritelanguage">
+                            <option>Pyhton</option>
+                            <option>JavaScript</option>
+                            <option>C++</option>
+                            <option>Ruby</option>
+                        </select>
+                </div>
+                <div>   <!--ingresa un checkbox-->
+                    <input type="checkbox" name="offers" id="offers" checked >
+                    <label for="offers">Yes, I would like to receive periodict email updates.</label>
+                </div>
+                <div>   <!--ingresa un boton-->
+                    <input type="submit" value="Create Account" >
+                </div> 
+                
+                <span>* Indicates a required field</span>
+
+            </form>
+
+    </body>
+
+</html> 
